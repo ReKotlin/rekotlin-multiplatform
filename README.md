@@ -2,7 +2,30 @@
 Experimental conversion of [ReKotlin](https://github.com/ReKotlin/ReKotlin)
 to multiplatform library
 
-Currently builds .jar for JVM/Android and .framework for iOS.
+## Integration
+
+Add following maven repository
+
+```gradle
+maven {
+    url "https://dl.bintray.com/rekotlin/rekotlin-multiplatform/"
+}
+```
+
+Common
+```gradle
+implementation 'org.rekotlin:rekotlin-multiplatform-metadata:0.0.1'
+```
+
+Android/JVM
+```gradle
+implementation 'org.rekotlin:rekotlin-multiplatform-jvm:0.0.1'
+```
+
+iOS
+```gradle
+implementation 'org.rekotlin:rekotlin-multiplatform-ios-sim:0.0.1'
+```
 
 ## Building
 
@@ -13,4 +36,5 @@ Run `./gradlew clean build`
 .jar file for multiplatform projects
 
 ## TODO
-A lot!
+- Figure out publishing library for both iOS simulator and phone.
+- Add sample
