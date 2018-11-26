@@ -17,7 +17,7 @@ kotlin {
         fromPreset(presets.iosX64, 'ios-sim') {
             compilations.main.outputKinds('FRAMEWORK')
         }
-        fromPreset(presets.iosArm64, 'ios-phone64') {
+        fromPreset(presets.iosArm64, 'ios-arm-64') {
             compilations.main.outputKinds('FRAMEWORK')
         }
     }
